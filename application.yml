@@ -1,18 +1,28 @@
 # application.yml (global configurations for all services)
-server:
-  port: 0
+# server:
+#   port: 0
 
-spring:
-  application:
-    name: common-config
-  cloud:
-    config:
-      enabled: true
-      uri: http://localhost:8089  # Config Server URL
+# spring:
+#   application:
+#     name: common-config
+#   cloud:
+#     config:
+#       enabled: true
+#       uri: http://localhost:8089  # Config Server URL
+
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://localhost:8761/eureka/
+#   instance:
+#     preferIpAddress: true
+
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka
   instance:
     preferIpAddress: true
+    hostname: localhost
+
